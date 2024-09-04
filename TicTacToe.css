@@ -1,0 +1,99 @@
+body{
+    font-family: cursive;
+    background-color: rgb(135, 85, 181);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; 
+}
+
+#board {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    background-color: #f9f9f9;
+    border: 1px solid #999;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background-color: #b0b0b0;
+}
+
+#status {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+}
+
+#reset {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+#reset:hover {
+    background-color: aqua;
+}
+
+.X {
+    color: rgb(167, 44, 44);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.O {
+    color: rgb(27, 27, 161);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.winning-cell {
+    background-color: rgb(213, 213, 33); 
+    animation: blink 0.5s ease-in-out infinite alternate; 
+}
+
+@keyframes blink {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: orange;
+    }
+}
