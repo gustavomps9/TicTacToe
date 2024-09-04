@@ -39,7 +39,7 @@ h1 {
     width: 100px;
     height: 100px;
     transition: background-color 0.3s ease;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .cell:hover {
