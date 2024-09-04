@@ -129,7 +129,7 @@ function endGame(draw) {
     });
 }
 
-// Função que define o texto do statuss
+// Função que define o texto do status
 function setStatusText(message) {
     status.innerText = message;
 }
